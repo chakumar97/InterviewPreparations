@@ -16,7 +16,6 @@ public class FindTarget {
     public static List<Integer[]> findArraysWithTarget(Integer[] nums, int target){
         Arrays.sort(nums);
         int start =0, end = nums.length-1;
-        Integer[] tuple = new Integer[2];
         List<Integer[]> result = new ArrayList<>();
         while(start<end){
             if(nums[start] + nums[end] > target){
@@ -24,6 +23,7 @@ public class FindTarget {
             }else if(nums[start] + nums[end] < target){
                 start++;
             }else{
+                Integer[] tuple = new Integer[2];
                 tuple[0] = nums[start];
                 tuple[1] = nums[end];
                 result.add(tuple);
