@@ -7,13 +7,14 @@ import java.util.stream.Stream;
 public class ReverseString {
     public static void main(String[] args) {
         String str = "chandan kumar";
-        
+
         System.out.println(reverse(str));
 
         //the idiomatic solution is
         String reversed = new StringBuilder(str).reverse().toString();
         System.out.println(reversed);
 
+        //check once more
     }
 
     private static String reverse(String str) {
