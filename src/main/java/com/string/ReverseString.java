@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String str = "chandan and suraj";
+        String str = "chandan kumar";
         System.out.println(reverse(str));
 
         //the idiomatic solution is
